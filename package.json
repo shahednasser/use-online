@@ -1,0 +1,42 @@
+{
+  "name": "use-online",
+  "version": "1.0.0",
+  "description": "React Hook to detect when the user is online",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahednasser/use-online.git"
+  },
+  "scripts": {
+    "prebuild": "npm i",
+    "build": "babel src --out-dir dist",
+    "postbuild": "copyfiles -u 1 ./src/useOnline.d.ts ./dist"
+  },
+  "main": "dist/useOnline.js",
+  "types": "dist/useOnline.d.ts",
+  "keywords": [
+    "react",
+    "hook",
+    "react",
+    "hooks",
+    "tutorial"
+  ],
+  "author": "Shahed Nasser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shahednasser/use-online/issues"
+  },
+  "homepage": "https://github.com/shahednasser/use-online#readme",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "copyfiles": "^2.4.1"
+  }
+}
