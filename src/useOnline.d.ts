@@ -1,3 +1,3 @@
-declare module 'use-online-hook' {
+declare module 'use-online' {
     export default function useOnline (): boolean
 }
