@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 
 function useOnline () {
     const [online, setOnline] = useState(navigator.online)
-    console.log(online, navigator.onLine)
 
     function offlineHandler () {
         setOnline(false)
